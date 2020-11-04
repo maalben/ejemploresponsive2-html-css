@@ -1,0 +1,140 @@
+body{
+    background-color: #84ecfa;
+}
+
+.container{
+    width: 996px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+.activo{
+    background-color: #f39c55;
+}
+
+.tamano{
+    width: 200px;
+}
+
+section, aside{
+    padding: 10px;
+    background: #CCC;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+section{
+    float: left;
+    width: 70%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+}
+
+nav{
+    overflow: hidden;
+}
+
+nav ul{
+    list-style-type: none;
+    float: left;
+    padding: 0px;
+}
+
+nav ul li{
+    float: left;
+    padding: 3px 10px;
+    margin: 2px;
+    background-color: #7070ff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: #FFFFFF;
+}
+
+footer{
+    margin: 10px;
+    text-align: center;
+    clear: both;
+}
+
+
+/*Para usar 980px o menos*/
+@media screen and (max-width: 980px){
+    .container{
+        width: 98%;
+    }
+    section{
+        width: 68%;
+    }
+}
+
+/*Para usar 700px o menos*/
+@media screen and (max-width: 700px){
+    aside, section{
+        float: none;
+        width: 96%;
+    }
+
+    nav, section{
+        font-size: 1.2em;
+    }
+
+    aside{
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    nav ul{
+        float:none;
+        clear: both;
+    }
+
+    .tamano{
+        width: 400px;
+    }
+
+}
+
+/*Para 501px o menos*/
+@media screen and (max-width: 501px){
+    aside{
+        /* display: none;*/
+        background-color: #fa3939;
+    }
+
+    nav, section{
+        font-size: 1.5em;   
+    }
+
+    section{
+        width: 94%;
+    }
+
+    nav ul{
+        float: left;
+        clear: none;
+        width: 50%;
+    }
+
+    nav ul li{
+        float: none;
+    }
+
+    .tamano{
+        width: 100px;
+    }
+
+}
